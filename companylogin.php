@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Company Login Form</title>
-  <link rel="stylesheet" href="CSS/stylecompanylogin.css">
+  <?php include 'CSS/companyloginstyle.php'; ?>
   <script src="companylogin.js"></script>
   </html>
 </head>

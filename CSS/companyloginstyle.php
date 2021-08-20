@@ -1,3 +1,5 @@
+<style media="screen">
+
 body{
   margin:0;
   padding:0;
@@ -62,3 +64,4 @@ body{
 {
   color: white;
 }
+</style>

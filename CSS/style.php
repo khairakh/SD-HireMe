@@ -50,7 +50,7 @@ html, body {
 }
 
 .dropbtn {
-    font-size: 16px;  
+    font-size: 16px;
     padding: 14px 16px;
     background-color: #98694F;
     color: white;
