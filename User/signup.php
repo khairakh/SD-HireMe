@@ -1,3 +1,11 @@
+<?php
+session_start()
+
+  include("conn/conn.php")
+
+  $user_data = check_login($con);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -281,8 +289,9 @@ fieldset {
 		<!-- Click to reset fields -->
 		<button type = "reset" class = "resetbtn" value = "Reset" >Reset</button>
 
-		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
-    <a href="userlogin.php">Already have an account? Login</a>
+		<p>By creating an account you agree to our <a href="#">Terms & Privacy</a>
+    <br>
+    <a href="userlogin.php">Already have an account? Login</a> </p>
 
 	</fieldset>
 	</div>
