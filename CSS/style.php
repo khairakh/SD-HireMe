@@ -17,14 +17,14 @@ html, body {
 	margin-top: 2%;
 	margin-bottom: 2%;
 	overflow: hidden;
-	background-color: #CA9E7B;
+	background-color: #DBF6E9;
 	padding:100;
     width: 100%;
 }
 
 .topnav a {
 	float: left;
-	color: white;
+	color: #31326F;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -33,13 +33,13 @@ html, body {
 
 /* Topnav section will be highlighted when cursor touches it*/
 .topnav a:hover, .dropdown:hover, .dropbtn:hover, .dropdown-content a:hover{
-	background-color: #98694F;
-	color: black;
+	background-color: #9FD3C7;
+	color: white;
 }
 
 /* Active is for the page where we currently is */
 .topnav a.active {
-	background-color: #66462F;
+	background-color: #3F3F44;
 	color: white;
 }
 
@@ -50,10 +50,11 @@ html, body {
 }
 
 .dropbtn {
-    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+	font-size: 17px;
     padding: 14px 16px;
-    background-color: #98694F;
-    color: white;
+    background-color: #DBF6E9;
+    color: black;
 }
 
 /* The design for dropdown box content */
@@ -84,7 +85,7 @@ html, body {
     bottom: 0;
     width: 100%;
     padding: 2%;
-    background-color: #CA9E7B;
+    background-color: #3F3F44;
     color: white;
     text-align: center;
 }

@@ -6,9 +6,19 @@
 /*To style all*/
 body {
   font-family: Times New Roman;
-  background-color: #393B44;
   text-align:center;
-  margin: 100x;;
+  margin:0;
+  height:100%;
+}
+
+.companyName {
+	font-size:60px;
+	color:#363636;
+	text-align:center;
+	font-weight: bold;
+	background-color: #DBF6E9;
+	padding:100;
+    width: 100%;
 }
  
 /*To style the input box that user will fill*/
@@ -105,10 +115,10 @@ legend {
 	
 /*To style the outline fieldset*/
 fieldset {
-	background-color:#F1F3F8;
+	background-color:#393B44;
 	margin-left:19%;
 	margin-right:20%;
-	color: #000000;
+	color: white;
 	border: 2px solid #F1F3F8;
 	border-radius: 50px;
 }
@@ -120,14 +130,15 @@ fieldset {
 }
 
 /*To style the footer*/
-footer {
-	color:black;
-	font-size:30px;
-	text-align:center;
-	background-color: #8D93AB;
-	width:100%;
-	float:right;
-	padding:2%;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    background-color: #3F3F44;
+    color: white;
+    text-align: center;
 }
 </style>
 <script>
@@ -202,9 +213,10 @@ footer {
 </head>
 
 <body>
+	<div class="companyName">HireMe</div>
 	<form onsubmit ="return validateForm()">  
 	<div class="container">
-	<p style="color:white">Please fill in this form to create an account.</p>
+	<p style="color:black">Please fill in this form to create an account.</p>
 	<fieldset class="field">
 	<legend>Company Registration</legend>
   
@@ -244,12 +256,12 @@ footer {
 	</fieldset>
 	</div>
 	<div class="container signin">
-		<p style="color:white">Already have an account? <a href="">Sign In</a></p>
+		<p style="color:black">Already have an account? <a href="companylogin.php">Sign In</a></p>
 	</div>
 	</form>  
 	
 </body>
 <footer class="footer">
-	Powered by HireMe TEAM
+	Powered by HireMe Team &copy
 </footer>
 </html>

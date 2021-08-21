@@ -9,9 +9,9 @@
 <body>
 <div class="companyName">HireMe</div>
 <div class="topnav">
-  <a class="active">Home</a>
+  <a href="homepage.php">Home</a>
   <a href="aboutus.php">About us</a>
-  <a href="contactus.php">Contact us</a>
+  <a class="active">Contact us</a>
   <div class="dropdown">
   <button class="dropbtn" onclick="userOptions()">Login
   </button>

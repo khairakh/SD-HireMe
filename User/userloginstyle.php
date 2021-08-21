@@ -1,11 +1,16 @@
-<style media="screen">
-
-body{
-  margin:0;
-  padding:0;
-  font-family: sans-serif;
-  background: white;
-  background-size: cover;
+<style>
+html, body {
+	margin:0;
+	height:100%;
+}
+.companyName {
+	font-size:60px;
+	color:#363636;
+	text-align:center;
+	font-weight: bold;
+	background-color: #DBF6E9;
+	padding:100;
+  width: 100%;
 }
 .box{
   width: 300px;
@@ -63,5 +68,15 @@ body{
 .box a
 {
   color: white;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2%;
+    background-color: #3F3F44;
+    color: white;
+    text-align: center;
 }
 </style>
