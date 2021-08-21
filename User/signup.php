@@ -2,6 +2,39 @@
 session_start()
 
   include("conn/conn.php")
+	include("User/functions.php")
+	if($_SERVER['REQUEST_METHOD'] == "POST")
+		{
+
+		//something was posted
+		$firstname = $_POST['firstname'];
+		$lastname = $_POST['lastname'];
+		$email = $_POST['email'];
+		$password = $_POST['password'];
+		$phone = $_POST['phone'];
+		$address = $_POST['address'];
+		$gender = $_POST['gender'];
+
+		if(!empty($email) && !empty($firstname) && !empty($lastname) && !empty($password)
+		 && !empty($phone) && !empty($address) && !empty($gender) && !is_numeric($firstname)
+		 && !is_numeric($lastname) && !is_numeric($email))
+		{
+
+			//save to database
+			$userid = random_num(20);
+			$query = "insert into candidates (userid, firstname, lastname, email, phone,
+			 address, gender, password) values ('$userid', '$firstname', '$lastname', 
+			'$email', '$phone', '$address', '$gender', '$password')";
+
+			mysqli_query($query);
+			header("Location: ../homepage.php");
+			die;
+		} 
+		else 
+		{
+			echo "Please enter some valid information!";
+		}	
+	}
 
   $user_data = check_login($con);
 ?>

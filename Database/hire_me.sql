@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 21, 2021 at 07:00 PM
+-- Generation Time: Aug 21, 2021 at 07:35 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `candidate` (
   `id` bigint(255) NOT NULL,
+  `userid` int(20) NOT NULL,
   `firstname` varchar(1000) NOT NULL,
   `lastname` varchar(1000) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -61,13 +62,16 @@ CREATE TABLE `company` (
 -- Indexes for table `candidate`
 --
 ALTER TABLE `candidate`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `userid` (`userid`),
+  ADD KEY `email` (`email`);
 
 --
 -- Indexes for table `company`
 --
 ALTER TABLE `company`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `email` (`email`);
 
 --
 -- AUTO_INCREMENT for dumped tables
