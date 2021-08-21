@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 21, 2021 at 07:35 PM
+-- Generation Time: Aug 21, 2021 at 08:14 PM
 -- Server version: 10.4.20-MariaDB
 -- PHP Version: 8.0.9
 
@@ -28,15 +28,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `candidate` (
-  `id` bigint(255) NOT NULL,
+  `id` bigint(20) NOT NULL,
   `userid` int(20) NOT NULL,
-  `firstname` varchar(1000) NOT NULL,
-  `lastname` varchar(1000) NOT NULL,
+  `firstname` varchar(100) NOT NULL,
+  `lastname` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `phone` varchar(14) NOT NULL,
-  `address` varchar(1000) NOT NULL,
+  `phone` varchar(11) NOT NULL,
+  `address` varchar(100) NOT NULL,
   `gender` varchar(6) NOT NULL,
-  `password` varchar(1000) NOT NULL
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -81,7 +81,7 @@ ALTER TABLE `company`
 -- AUTO_INCREMENT for table `candidate`
 --
 ALTER TABLE `candidate`
-  MODIFY `id` bigint(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `company`
