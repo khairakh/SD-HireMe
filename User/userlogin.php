@@ -12,8 +12,8 @@
     <h1>
       user login
     </h1>
-    <input type="text" name="" placeholder="Enter Username" id="username">
-    <input type="text" name="" placeholder="Enter Password" id="password">
+    <input type="text" name="username" placeholder="Enter Username" id="username">
+    <input type="text" name="password" placeholder="Enter Password" id="password">
     <input type="submit" name="" value="Login" onClick="validate()" >
     <a href="signup.php">New user? Signup</a>
 </form>
