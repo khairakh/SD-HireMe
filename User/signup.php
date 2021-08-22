@@ -22,7 +22,7 @@ session_start()
 
 			//save to database
 			$userid = random_num(20);
-			$query = "insert into candidates (userid, firstname, lastname, email, phone,
+			$query = "insert into candidate (userid, firstname, lastname, email, phone,
 			 address, gender, password) values ('$userid', '$firstname', '$lastname', 
 			'$email', '$phone', '$address', '$gender', '$password')";
 
